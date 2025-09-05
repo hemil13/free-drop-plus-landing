@@ -16,14 +16,14 @@ const Header = () => {
       const aboutSection = document.getElementById('about');
       
       if (aboutSection) {
-        const aboutSectionBottom = aboutSection.offsetTop + aboutSection.offsetHeight;
+        const aboutSectionTop = aboutSection.offsetTop;
         
-        // Hide header when scrolled past About section and scrolling down
-        if (currentScrollY > aboutSectionBottom && currentScrollY > lastScrollY) {
+        // Hide header when reaching About section and scrolling down
+        if (currentScrollY >= aboutSectionTop && currentScrollY > lastScrollY) {
           setIsVisible(false);
         } 
-        // Show header when scrolling up or still in hero/about area
-        else if (currentScrollY < lastScrollY || currentScrollY <= aboutSectionBottom) {
+        // Show header when scrolling up or still in hero area
+        else if (currentScrollY < lastScrollY || currentScrollY < aboutSectionTop) {
           setIsVisible(true);
         }
       }
