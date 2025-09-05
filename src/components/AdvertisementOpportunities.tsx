@@ -85,7 +85,7 @@ const AdvertisementOpportunities = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto">
+        {/* <div className="grid md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
             <div className="text-3xl font-bold mb-2">10M+</div>
             <div className="text-white/80">Annual Impressions</div>
@@ -98,7 +98,7 @@ const AdvertisementOpportunities = () => {
             <div className="text-3xl font-bold mb-2">500+</div>
             <div className="text-white/80">Distribution Points</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

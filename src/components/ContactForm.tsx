@@ -78,7 +78,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Email</div>
-                    <div className="text-muted-foreground">hello@freedropplus.com</div>
+                    <div className="text-muted-foreground">freedropplus@gmail.com</div>
                   </div>
                 </div>
 
@@ -88,7 +88,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Phone</div>
-                    <div className="text-muted-foreground">+1 (555) 123-WATER</div>
+                    <div className="text-muted-foreground">+919054692226</div>
                   </div>
                 </div>
 
@@ -98,7 +98,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Office</div>
-                    <div className="text-muted-foreground">123 Sustainability Ave, Green City, GC 12345</div>
+                    <div className="text-muted-foreground">Gujarat</div>
                   </div>
                 </div>
               </div>
