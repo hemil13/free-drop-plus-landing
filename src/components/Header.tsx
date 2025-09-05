@@ -1,13 +1,44 @@
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 import freedropplusLogo from "@/assets/freedropplus-logo.png";
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const aboutSection = document.getElementById('about');
+      
+      if (aboutSection) {
+        const aboutSectionBottom = aboutSection.offsetTop + aboutSection.offsetHeight;
+        
+        // Hide header when scrolled past About section and scrolling down
+        if (currentScrollY > aboutSectionBottom && currentScrollY > lastScrollY) {
+          setIsVisible(false);
+        } 
+        // Show header when scrolling up or still in hero/about area
+        else if (currentScrollY < lastScrollY || currentScrollY <= aboutSectionBottom) {
+          setIsVisible(true);
+        }
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20 transition-transform duration-300 ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo and Company Name */}
