@@ -38,9 +38,9 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {/* Connection line for desktop */}
-              {index < steps.length - 1 && (
+              {/* {index < steps.length - 1 && (
                 <div className="hidden md:block absolute top-20 left-full w-full h-0.5 bg-gradient-to-r from-primary to-secondary transform translate-x-4 z-0"></div>
-              )}
+              )} */}
               
               <div className="glass-effect rounded-2xl p-8 text-center smooth-transition hover:shadow-2xl hover:scale-105 relative z-10">
                 <div className={`w-20 h-20 ${step.color} rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg`}>
