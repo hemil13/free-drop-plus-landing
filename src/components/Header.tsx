@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import freedropplusLogo from "@/assets/freedropplus-logo.png";
+import freedropplusLogo from "@/assets/FreeDropPlusLogo.jpg";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
