@@ -38,7 +38,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/60">
-            © 2024 FreeDropPlus. All rights reserved. | Sustainability • Community • Accessibility
+            © 2025 FreeDropPlus. All rights reserved. | Sustainability • Community • Accessibility
           </p>
         </div>
       </div>

@@ -20,9 +20,9 @@ const BottleOptions = () => {
               <div className="w-24 h-24 bg-secondary rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Recycle className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-3xl font-bold mb-4 text-foreground">Glass Bottles</h3>
+              <h3 className="text-3xl font-bold mb-4 text-foreground">Biodegradable Bottles</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                Premium, sustainable, and infinitely recyclable
+                Government certified, Sustainable and Recyclable
               </p>
             </div>
 
@@ -58,9 +58,9 @@ const BottleOptions = () => {
               <div className="w-24 h-24 bg-primary rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Zap className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-3xl font-bold mb-4 text-foreground">Plastic Bottles</h3>
+              <h3 className="text-3xl font-bold mb-4 text-foreground">Alkaline Water Plastic Bottles</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                Lightweight, convenient, and recyclable
+                Lightweight, Convenient, and Healthy
               </p>
             </div>
 
@@ -85,7 +85,7 @@ const BottleOptions = () => {
 
             <div className="mt-8 p-4 bg-primary/10 rounded-xl">
               <p className="text-sm text-primary font-semibold text-center">
-                ⚡ Best for Convenience
+                ⚡ Best for Health and Convenience
               </p>
             </div>
           </div>
@@ -93,15 +93,15 @@ const BottleOptions = () => {
 
         <div className="text-center mt-12">
           <div className="glass-effect rounded-xl p-6 max-w-2xl mx-auto">
-            <p className="text-muted-foreground">
-              <span className="font-semibold text-foreground">Both options are completely free</span> and 
-              supported by our advertising partners. Choose based on your personal preferences and lifestyle needs.
+            <p className="text-muted-foreground"> 
+              <span className="font-semibold text-foreground">Both options are completely supported </span> 
+               by our advertising partners. Choose based on your personal preferences and lifestyle needs.
             </p>
           </div>
         </div>
       </div>
     </section>
-  );
+  ); 
 };
 
 export default BottleOptions;
